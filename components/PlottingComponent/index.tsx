@@ -33,7 +33,7 @@ export default function PlottingComponent() {
 
     const newObject = {
       type: currentObjectType,
-      position: { x: offsetX, y: offsetY },
+      position: { x: offsetX - 2, y: offsetY - 2 },
     };
 
     setObjects((objects) => objects.concat(newObject));
