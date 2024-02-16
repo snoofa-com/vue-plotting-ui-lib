@@ -10,18 +10,24 @@ import {
 
 import Button from "../Button";
 import { cn } from "@/utils/helpers";
+import { ReactZoomPanPinchContentRef } from "react-zoom-pan-pinch";
+import { ObjectTypes } from "./types";
 
 export default function Toolbar({
-  onImageChange,
-  zoomIn,
-  zoomOut,
-  resetTransform,
-  centerView,
-  isDotSelect,
+  panZoomControls,
   currentObjectType,
   setCurrentObjectType,
-  isLineSelect,
-}: any) {
+  onImageChange,
+}: {
+  panZoomControls: ReactZoomPanPinchContentRef;
+  currentObjectType: ObjectTypes | undefined;
+  setCurrentObjectType: React.Dispatch<
+    React.SetStateAction<ObjectTypes | undefined>
+  >;
+  onImageChange: React.ChangeEventHandler<HTMLInputElement>;
+}) {
+  const isDotSelect = currentObjectType === "dot";
+  const isLineSelect = currentObjectType === "line";
   return (
     <div className="m-2 flex w-fit gap-2 border p-2">
       <input
@@ -33,7 +39,7 @@ export default function Toolbar({
       <Button
         className="px-2"
         onClick={() => {
-          zoomIn();
+          panZoomControls.zoomIn();
         }}
       >
         <ZoomIn />
@@ -41,7 +47,7 @@ export default function Toolbar({
       <Button
         className="px-2"
         onClick={() => {
-          zoomOut();
+          panZoomControls.zoomOut();
         }}
       >
         <ZoomOut />
@@ -49,7 +55,7 @@ export default function Toolbar({
       <Button
         className="px-2"
         onClick={() => {
-          resetTransform();
+          panZoomControls.resetTransform();
         }}
       >
         <RotateCcw />
@@ -57,7 +63,7 @@ export default function Toolbar({
       <Button
         className="px-2"
         onClick={() => {
-          centerView();
+          panZoomControls.centerView();
         }}
       >
         <Fullscreen />

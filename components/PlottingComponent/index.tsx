@@ -16,9 +16,6 @@ export default function PlottingComponent() {
     objectsHistory,
   } = usePlottingComponentStates();
 
-  const isDotSelect = currentObjectType === "dot";
-  const isLineSelect = currentObjectType === "line";
-
   const currentHistory = [...objectsHistory].reverse();
 
   const onImageChange: React.ChangeEventHandler<HTMLInputElement> = (event) => {
@@ -50,18 +47,13 @@ export default function PlottingComponent() {
   return (
     <section className="relative">
       <TransformWrapper initialScale={1} panning={{ excluded: ["object"] }}>
-        {({ centerView, zoomIn, zoomOut, resetTransform }) => (
+        {(panZoomControls) => (
           <React.Fragment>
             <Toolbar
               onImageChange={onImageChange}
-              zoomIn={zoomIn}
-              zoomOut={zoomOut}
-              resetTransform={resetTransform}
-              centerView={centerView}
-              isDotSelect={isDotSelect}
+              panZoomControls={panZoomControls}
               currentObjectType={currentObjectType}
               setCurrentObjectType={setCurrentObjectType}
-              isLineSelect={isLineSelect}
             />
             <TransformComponent>
               <div className="relative">
