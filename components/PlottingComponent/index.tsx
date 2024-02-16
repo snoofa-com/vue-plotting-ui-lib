@@ -37,8 +37,6 @@ export default function PlottingComponent() {
     }
   };
 
-  console.log({ image });
-
   const handleObjectAdd: React.MouseEventHandler<HTMLImageElement> = (
     event
   ) => {
