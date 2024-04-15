@@ -1,0 +1,36 @@
+{
+  "name": "vue-plotting-ui-lib",
+  "private": false,
+  "version": "0.0.3",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-plotting-ui-lib.umd.cjs",
+  "module": "./dist/vue-plotting-ui-lib.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vue-plotting-ui-lib.js",
+      "require": "./dist/vue-plotting-ui-lib.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@panzoom/panzoom": "^4.5.1",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.5",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.13"
+  }
+}
