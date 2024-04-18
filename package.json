@@ -1,8 +1,9 @@
 {
-  "name": "vue-plotting-ui-lib",
+  "name": "@snoofa-com/vue-plotting-ui-lib",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
+  "homepage": "https://github.com/snoofa-com/vue-plotting-ui-lib",
   "files": [
     "dist"
   ],
@@ -21,6 +22,9 @@
     "dev": "vite",
     "build": "vite build && vue-tsc",
     "preview": "vite preview"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "@panzoom/panzoom": "^4.5.1",
