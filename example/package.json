@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@snoofa-com/vue-plotting-ui-lib": "^0.0.6",
     "vue": "^3.4.21",
     "vue-plotting-ui-lib": "file:../"
   },

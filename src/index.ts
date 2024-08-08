@@ -1,5 +1,5 @@
-import FiddleFit, { type Line, type Props } from "./components/FiddleFit.vue";
+import LinePlotter from "./components/LinePlotter.vue";
 
-export { FiddleFit, type Line, type Props };
+export { LinePlotter };
 
-export default FiddleFit;
+export default LinePlotter;

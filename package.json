@@ -1,7 +1,7 @@
 {
   "name": "@snoofa-com/vue-plotting-ui-lib",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "homepage": "https://github.com/snoofa-com/vue-plotting-ui-lib",
   "files": [
@@ -19,7 +19,7 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "vite",
+    "dev": "cd example && vite",
     "build": "vite build && vue-tsc",
     "preview": "vite preview"
   },
