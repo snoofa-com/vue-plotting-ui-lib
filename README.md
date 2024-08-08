@@ -10,7 +10,6 @@ https://codesandbox.io/p/devbox/gallant-lamport-forked-24sy7v?workspaceId=b11e17
 
 <img width="499" alt="Screenshot 2024-08-08 at 4 17 16 PM" src="https://github.com/user-attachments/assets/de8a919e-3544-46ce-b436-623e6f902e83">
 
-
 ## ⚡ Quick Start
 
 Getting started with VueJS Plotting UI Library is easy. To add to your project, choose your package manager and run one of the following commands:
@@ -42,3 +41,7 @@ npm install @snoofa-com/vue-plotting-ui-lib
    ```
 
 3. See `example/App.vue` for more details
+
+## npm
+
+https://www.npmjs.com/package/@snoofa-com/vue-plotting-ui-lib
