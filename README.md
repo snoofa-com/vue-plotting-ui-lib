@@ -8,7 +8,8 @@ A plotting UI component made using VueJS.
 
 https://codesandbox.io/p/devbox/gallant-lamport-forked-24sy7v?workspaceId=b11e17e3-8d0d-4ee2-b2c0-556a8b41a6a0
 
-<img width="499" alt="Screenshot 2024-08-08 at 4 17 16 PM" src="https://github.com/user-attachments/assets/de8a919e-3544-46ce-b436-623e6f902e83">
+<img src="example/lineplotterdemo.png" alt="Raw component" width="500">
+<img src="example/fiddlefitdemo.gif" alt="Component use case from snoofa" width="500" >
 
 ## ⚡ Quick Start
 
